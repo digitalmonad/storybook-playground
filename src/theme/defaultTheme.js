@@ -1,3 +1,3 @@
-export const defaultTheme = {
+export const theme = {
   color: "blue",
 };

@@ -1,4 +1,4 @@
-import { Button } from "./Button";
+import { Button } from "./Button.component";
 import React from "react";
 
 export default {

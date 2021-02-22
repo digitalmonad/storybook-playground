@@ -8,6 +8,13 @@ export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
 };
 
+const GlobalStyleDecorator = (fn) => (
+  <>
+    <GlobalStyle />
+    {fn()}
+  </>
+);
+
 // const DummyDecorator = (fn) => (
 //   <div>
 //     <h1>Ba Dum Tsss...</h1>
@@ -15,10 +22,5 @@ export const parameters = {
 //   </div>
 // );
 // addDecorator(DummyDecorator);
-addDecorator((fn) => (
-  <>
-    <GlobalStyle />
-    {fn()}
-  </>
-));
+addDecorator(GlobalStyleDecorator);
 addDecorator(withThemes(ThemeProvider, [theme]));

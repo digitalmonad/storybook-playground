@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import styled from "styled-components";
+import { Root } from "./Button.styled";
 
 export const Button = ({ label, ...props }) => {
   return (
@@ -9,7 +9,3 @@ export const Button = ({ label, ...props }) => {
     </Root>
   );
 };
-
-const Root = styled.button`
-  color: ${({ theme }) => theme.color};
-`;

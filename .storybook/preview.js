@@ -2,6 +2,7 @@ import { GlobalStyle } from "../src/theme/GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import { addDecorator } from "@storybook/react";
 import { theme } from "../src/theme/defaultTheme.js";
+import { withDesign } from "storybook-addon-designs";
 import { withThemes } from "@react-theming/storybook-addon";
 
 export const parameters = {
@@ -23,4 +24,5 @@ const GlobalStyleDecorator = (fn) => (
 // );
 // addDecorator(DummyDecorator);
 addDecorator(GlobalStyleDecorator);
+addDecorator(withDesign);
 addDecorator(withThemes(ThemeProvider, [theme]));

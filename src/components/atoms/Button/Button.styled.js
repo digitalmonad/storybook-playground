@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Root = styled.button`
+export const ButtonRoot = styled.button`
   display: inline-flex;
   padding: 16px;
 

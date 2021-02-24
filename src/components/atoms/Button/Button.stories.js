@@ -13,6 +13,14 @@ Primary.args = {
   label: "Button",
 };
 
+Primary.parameters = {
+  design: {
+    type: "figma",
+    url:
+      "https://www.figma.com/file/QUZgU9GTsKD5DZZnjpV0dW/Basic-Design-System?node-id=3%3A53",
+  },
+};
+
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: "Button",
